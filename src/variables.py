@@ -9,7 +9,7 @@ from sklearn import tree
 vino = pd.read_csv('../data/raw/winequality-white.csv', delimiter= ';')
 vino
 
-vino_features = vino.drop(columns='quality')
+vino_features = vino.drop(columns=['fixed acidity', 'citric acid', 'residual sugar', 'free sulfur dioxide', 'total sulfur dioxide', 'pH', 'sulphates','quality'])
 vino_features
 
 vino_target = vino['quality']
