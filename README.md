@@ -10,14 +10,14 @@ La plataforma de [Kaggle](https://www.kaggle.com/datasets/piyushagni5/white-wine
 
 **Desarrollo del trabajo de análisis**
 
-+ En primer lugar, 
++ En primer lugar, hacemos un análisis exploratorio de los datos que nos ayudará a entender la información que tenemos entre manos y cuál será la mejor forma de abordar nuestro desafío.
 
-+ A continuación, 
++ A continuación, se trata de llevar a cabo un trabajo de limpieza, reestructuración y reacondicionamiento de los datos de tal forma que, cuando los llevemos al entrenamiento, den los mejores resultados posibles.
 
-+ Por último, 
++ Por último, elegimos cuidadosamente qué modelos de *Machine Learning* vamos a utilizar para nuestros entrenamientos.
 
 
-Dada la 
+¡Salud!
 
 **CONCLUSIONES**
 
