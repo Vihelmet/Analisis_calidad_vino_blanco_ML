@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split, RandomizedSearchCV
 from sklearn.preprocessing import StandardScaler, normalize
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import confusion_matrix, classification_report, accuracy_score
+from sklearn.metrics import confusion_matrix, classification_report, accuracy_score, mean_absolute_error, mean_absolute_percentage_error, mean_squared_error
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.svm import SVC
 from sklearn.neighbors import KNeighborsClassifier
@@ -31,3 +31,7 @@ rf.fit(X_test, y_test)
 pred_rf = modelo_entrenado.predict(X_test)
 print(rf.score(X_test, y_test))
 print(metrics.classification_report(y_test, pred_rf, zero_division=1))
+print("MAE: ", mean_absolute_error(y_test, pred_rf))
+print("MAPE: ", mean_absolute_percentage_error(y_test, pred_rf))
+print("MSE: ", mean_squared_error(y_test, pred_rf))
+print("RMSE: ", np.sqrt(mean_squared_error(y_test, pred_rf)))
