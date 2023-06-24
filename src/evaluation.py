@@ -22,11 +22,12 @@ with open(r'./Analisis_calidad_vino_blanco_ML/models/modelo.pkl', 'rb') as archi
 vino_test = pd.read_csv(r'.\Analisis_calidad_vino_blanco_ML\data\test.csv', index_col=0)
 
 
-X = vino_test.drop(columns=['quality'])
-y = vino_test['quality']
+X = vino_test.drop(columns=['quality', 'good quality'])
+y = vino_test['good quality']
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=21)
-
+rf = RandomForestClassifier(n_estimators= 100, random_state=21)
+rf.fit(X_test, y_test)
 pred_rf = modelo_entrenado.predict(X_test)
-
-print (metrics.classification_report(y_test, pred_rf, zero_division=1))
+print(rf.score(X_test, y_test))
+print(metrics.classification_report(y_test, pred_rf, zero_division=1))
