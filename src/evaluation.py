@@ -27,6 +27,6 @@ y = vino_test['quality']
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=21)
 
-pred_rf_2 = modelo_entrenado.predict(X_test)
+pred_rf = modelo_entrenado.predict(X_test)
 
-print (metrics.classification_report(y_test, pred_rf_2, zero_division=1))
+print (metrics.classification_report(y_test, pred_rf, zero_division=1))

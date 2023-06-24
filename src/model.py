@@ -28,7 +28,7 @@ scaler = StandardScaler()
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.fit_transform(X_test)
 
-rf = RandomForestClassifier(n_estimators= 50, criterion= 'entropy', random_state=21)
+rf = RandomForestClassifier(n_estimators= 100, random_state=21)
 rf.fit(X_train, y_train)
 
 n_estimators = np.random.uniform(70, 80, 5).astype(int)
