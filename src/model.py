@@ -55,3 +55,6 @@ rf_2.fit(X_train, y_train)
 
 with open(r'./Analisis_calidad_vino_blanco_ML/models/modelo.pkl', 'wb') as archivo:
     pickle.dump(rf_2, archivo)
+
+with open(r'./Analisis_calidad_vino_blanco_ML/models/model_config.yaml', 'w') as c:
+    yaml.dump(rf_2, c)

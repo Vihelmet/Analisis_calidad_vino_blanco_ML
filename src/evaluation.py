@@ -1,15 +1,25 @@
-import pandas as pd 
+import pandas as pd
 import numpy as np
-from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import classification_report
+import seaborn as sns
+import matplotlib.pyplot as plt
+from sklearn.model_selection import train_test_split, RandomizedSearchCV
+from sklearn.preprocessing import StandardScaler, normalize
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import confusion_matrix, classification_report, accuracy_score
+from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+from sklearn.svm import SVC
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.decomposition import PCA
+from sklearn.pipeline import Pipeline
+from sklearn import metrics
+from sklearn import tree
 import pickle
 import yaml
 
 with open(r'./Analisis_calidad_vino_blanco_ML/models/modelo.pkl', 'rb') as archivo_entrada:
     modelo_entrenado = pickle.load(archivo_entrada)
 
-vino_test = pd.read_csv(r'.\Analisis_calidad_vino_blanco_ML\data\test.csv')
+vino_test = pd.read_csv(r'.\Analisis_calidad_vino_blanco_ML\data\test.csv', index_col=0)
 
 
 X = vino_test.drop(columns=['quality'])
