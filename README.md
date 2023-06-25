@@ -1,4 +1,4 @@
-[imagen de portada](https://www.freepik.es/foto-gratis/disparo-enfoque-superficial-copa-vino-blanco_13554633.htm#query=copa%20vino%20blanco&position=2&from_view=search&track=ais)
+[imagen de portada](data/Imagen de portada.jpg)
 
 # Analisis_calidad_vino_blanco_ML
 **INTRODUCCIÓN**
