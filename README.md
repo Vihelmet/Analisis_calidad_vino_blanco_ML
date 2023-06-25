@@ -1,6 +1,6 @@
 # Analisis_calidad_vino_blanco_ML
 
-![imagen de portada](data/Imagen de portada.jpg)
+![portada](data/Imagen de portada.jpg)
 
 **INTRODUCCIÓN**
 
