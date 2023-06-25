@@ -1,4 +1,4 @@
-[imagen de portada](data/Imagen de portada.jpg)
+![imagen de portada](data/Imagen de portada.jpg)
 
 # Analisis_calidad_vino_blanco_ML
 **INTRODUCCIÓN**
