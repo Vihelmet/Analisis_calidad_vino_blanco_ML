@@ -1,6 +1,6 @@
-[# Analisis_calidad_vino_blanco_ML](https://www.freepik.es/foto-gratis/disparo-enfoque-superficial-copa-vino-blanco_13554633.htm#query=copa%20vino%20blanco&position=2&from_view=search&track=ais)
+[imagen de portada](https://www.freepik.es/foto-gratis/disparo-enfoque-superficial-copa-vino-blanco_13554633.htm#query=copa%20vino%20blanco&position=2&from_view=search&track=ais)
 
-
+# Analisis_calidad_vino_blanco_ML
 **INTRODUCCIÓN**
 
 Se nos plantea el reto de llevar a cabo un análisis predictivo a partir del entrenamiento de diversos modelos de *Machine Learning*, tanto supervisados como no supervisados, a partir de un tema en concreto a nuestra elección. Tras mucho indagar, se nos presenta la posibilidad de predecir la variable de calidad de un vino blanco a partir de datos de composición.
