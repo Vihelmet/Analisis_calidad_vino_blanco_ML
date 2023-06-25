@@ -21,3 +21,7 @@ La plataforma de [Kaggle](https://www.kaggle.com/datasets/piyushagni5/white-wine
 
 **CONCLUSIONES**
 
+El modelo que mejor resultado nos dio fue un *Random Forest Classifier*, lo cual no es sorprendente. Suele funcionar muy bien para este tipo de casos y resulta fácil de explicar.
+
+En entrenamiento, arrojó valores por encima del 83 % y en testeo, obtuvimos un nada despreciable 68 %. Sin lugar a dudas, nuestro modelo aún tiene margen de mejora pero, tratándose del primer modelo entrenado, nada mal...
+
