@@ -1,6 +1,7 @@
+# Analisis_calidad_vino_blanco_ML
+
 ![imagen de portada](data/Imagen de portada.jpg)
 
-# Analisis_calidad_vino_blanco_ML
 **INTRODUCCIÓN**
 
 Se nos plantea el reto de llevar a cabo un análisis predictivo a partir del entrenamiento de diversos modelos de *Machine Learning*, tanto supervisados como no supervisados, a partir de un tema en concreto a nuestra elección. Tras mucho indagar, se nos presenta la posibilidad de predecir la variable de calidad de un vino blanco a partir de datos de composición.
