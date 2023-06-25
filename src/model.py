@@ -16,10 +16,10 @@ from sklearn import tree
 import pickle
 import yaml
 
-vino_processed = pd.read_csv(r'.\Analisis_calidad_vino_blanco_ML\data\processed.csv', index_col=0)
+train = pd.read_csv(r'.\Analisis_calidad_vino_blanco_ML\data\train.csv', index_col=0)
 
-X = vino_processed.drop(columns=['quality', 'good quality'])
-y = vino_processed['good quality']
+X = train.drop(columns=['good quality'])
+y = train['good quality']
 
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.20, random_state=21)
@@ -31,8 +31,8 @@ X_test = scaler.transform(X_test)
 rf = RandomForestClassifier(n_estimators= 100, random_state=21)
 rf.fit(X_train, y_train)
 
-pred_rf = rf.predict(X_test)
-print(rf.score(X_test, y_test))
+# pred_rf = rf.predict(X_test)
+# print(rf.score(X_test, y_test))
 
 with open(r'./Analisis_calidad_vino_blanco_ML/models/modelo.pkl', 'wb') as archivo:
     pickle.dump(rf, archivo)
