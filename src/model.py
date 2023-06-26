@@ -34,8 +34,8 @@ rf.fit(X_train, y_train)
 # pred_rf = rf.predict(X_test)
 # print(rf.score(X_test, y_test))
 
-with open(r'./Analisis_calidad_vino_blanco_ML/models/modelo.pkl', 'wb') as archivo:
+with open(r'./Analisis_calidad_vino_blanco_ML/models/modelo_rf_def.pkl', 'wb') as archivo:
     pickle.dump(rf, archivo)
 
-with open(r'./Analisis_calidad_vino_blanco_ML/models/model_config.yaml', 'w') as c:
+with open(r'./Analisis_calidad_vino_blanco_ML/models/model_config_def.yaml', 'w') as c:
     yaml.dump(rf, c)

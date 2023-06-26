@@ -16,7 +16,7 @@ from sklearn import tree
 import pickle
 import yaml
 
-with open(r'./Analisis_calidad_vino_blanco_ML/models/modelo.pkl', 'rb') as archivo_entrada:
+with open(r'./Analisis_calidad_vino_blanco_ML/models/modelo_rf_def.pkl', 'rb') as archivo_entrada:
     modelo_entrenado = pickle.load(archivo_entrada)
 
 vino_test = pd.read_csv(r'.\Analisis_calidad_vino_blanco_ML\data\test.csv', index_col=0)
