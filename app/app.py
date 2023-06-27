@@ -26,10 +26,10 @@ with open(r'./Analisis_calidad_vino_blanco_ML/models/modelo_knn.pkl', 'rb') as m
 
 def classify(num):
 
-    if num > 5:
-        return '1'
+    if num == 0:
+        return 'Mala calidad'
     else:
-        return '0'
+        return 'Buena calidad'
     
 def main():
     st.title('Entrenamiento modelos de predicción de la calidad del vino blanco')
@@ -37,10 +37,10 @@ def main():
     st.sidebar.header('Parámetros de entrada')
 
     def user_input_parameters():
-        alcohol = st.sidebar.slider('Alcohol', 7, 13)
-        density = st.sidebar.slider('Density', 0.1, 1.10)
-        chlorides = st.sidebar.slider('Chlorides', 0.02, 0.05)
-        volaci = st.sidebar.slider('Volatile acidity', 7, 13)
+        alcohol = st.sidebar.slider('Alcohol', 8, 14.2)
+        density = st.sidebar.slider('Density', 0.987, 1.038)
+        chlorides = st.sidebar.slider('Chlorides', 0.009, 0.346)
+        volaci = st.sidebar.slider('Volatile acidity', 0.08, 1.10)
         data = {'Alcohol': alcohol,
                 'Density': density,
                 'Chlorides': chlorides,

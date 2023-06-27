@@ -1,7 +1,4 @@
 pandas
-matplotlib
-numpy
-seaborn
-plotly
-scikit-learn
+sklearn
 streamlit
+pickle
