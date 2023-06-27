@@ -28,7 +28,7 @@ def classify(num):
 
     if num == 0:
         return 'Mala calidad'
-    else:
+    if num == 1:
         return 'Buena calidad'
     
 def main():
@@ -36,7 +36,7 @@ def main():
 
     st.sidebar.header('Parámetros de entrada')
 
-    def user_input_parameters():
+    def user_input_parameters(): #Poner todas las columnas
         alcohol = st.sidebar.slider('Alcohol', 8, 15)
         density = st.sidebar.slider('Density', 0, 2)
         chlorides = st.sidebar.slider('Chlorides', 0, 1)
@@ -61,15 +61,15 @@ def main():
 
     if st.button('RUN'):
         if model == 'Logistic Regression':
-            st.success(classify(logisticRegression.predict(df)))
+            st.success(classify(lgo.predict(df)))
         elif model == 'Random Forest Classifier':
-            st.success(classify(rf.predict(df)))
+            st.success(classify(randomfo.predict(df)))
         elif model == 'Gradient Boost':
-            st.success(classify(gb.predict(df))))
+            st.success(classify(gbo.predict(df)))
         elif model == 'SVM':
-            st.success(classify(svc.predict(df)))
+            st.success(classify(svco.predict(df)))
         elif model == 'KNN':
-            st.success(classify(knn.predict(df)))
+            st.success(classify(knno.predict(df)))
 
 
 if __name__ == '__main__':
