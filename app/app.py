@@ -37,14 +37,29 @@ def main():
     st.sidebar.header('Parámetros de entrada')
 
     def user_input_parameters(): #Poner todas las columnas
-        alcohol = st.sidebar.slider('Alcohol', 8, 15)
-        density = st.sidebar.slider('Density', 0, 2)
-        chlorides = st.sidebar.slider('Chlorides', 0, 1)
+        fixedac = st.sidebar.slider('Fixed acidity', 3, 14)
         volaci = st.sidebar.slider('Volatile acidity', 0, 2)
-        data = {'Alcohol': alcohol,
-                'Density': density,
-                'Chlorides': chlorides,
+        citricac = st.sidebar.slider('Citric acid', 0, 2)
+        ressug = st.sidebar.slider('Residual sugar', 0, 66)
+        chlorides = st.sidebar.slider('Chlorides', 0, 1)
+        freesd = st.sidebar.slider('Free sulphur dioxide', 2, 289)
+        totalsd = st.sidebar.slider('Total sulphur dioxide', 9, 440)
+        density = st.sidebar.slider('Density', 0, 2)
+        pH = st.sidebar.slider('pH', 2, 4)
+        sulp = st.sidebar.slider('Sulphates', 0, 2)
+        alcohol = st.sidebar.slider('Alcohol', 8, 15)
+                    
+        data = {'Fixed acidity': fixedac,
                 'Volatile acidity': volaci,
+                'Citric acid': citricac,
+                'Residual sugar': ressug,
+                'Chlorides': chlorides,
+                'Free sulphur dioxide': freesd,
+                'Total sulphur dioxide': totalsd,
+                'Density': density,
+                'pH': pH,
+                'Sulphates': sulp,
+                'Alcohol': alcohol,
                 }
         
         features = pd.DataFrame(data, index=[0])
