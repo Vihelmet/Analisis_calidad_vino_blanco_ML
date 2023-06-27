@@ -62,6 +62,15 @@ def main():
     if st.button('RUN'):
         if model == 'Logistic Regression':
             st.success(classify(logisticRegression.predict(df)))
+        elif model == 'Random Forest Classifier':
+            st.success(classify(rf.predict(df)))
+        elif model == 'Gradient Boost':
+            st.success(classify(gb.predict(df))))
+        elif model == 'SVM':
+            st.success(classify(svc.predict(df)))
+        elif model == 'KNN':
+            st.success(classify(knn.predict(df)))
+
 
 if __name__ == '__main__':
     main()
