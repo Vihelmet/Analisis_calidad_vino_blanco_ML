@@ -37,10 +37,10 @@ def main():
     st.sidebar.header('Parámetros de entrada')
 
     def user_input_parameters():
-        alcohol = st.sidebar.slider('Alcohol', 8, 14.2)
-        density = st.sidebar.slider('Density', 0.987, 1.038)
-        chlorides = st.sidebar.slider('Chlorides', 0.009, 0.346)
-        volaci = st.sidebar.slider('Volatile acidity', 0.08, 1.10)
+        alcohol = st.sidebar.slider('Alcohol', 8, 15)
+        density = st.sidebar.slider('Density', 0, 2)
+        chlorides = st.sidebar.slider('Chlorides', 0, 1)
+        volaci = st.sidebar.slider('Volatile acidity', 0, 2)
         data = {'Alcohol': alcohol,
                 'Density': density,
                 'Chlorides': chlorides,
@@ -60,7 +60,7 @@ def main():
     st.write(df)
 
     if st.button('RUN'):
-        if model = 'Logistic Regression':
+        if model == 'Logistic Regression':
             st.success(classify(logisticRegression.predict(df)))
 
 if __name__ == '__main__':
