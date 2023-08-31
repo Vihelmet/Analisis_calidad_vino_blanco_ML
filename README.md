@@ -1,4 +1,4 @@
-<h1 id="Análisis predictivo de la calidad del vino blanco"> :clinking_glass: Análisis predictivo de la calidad del vino blanco</h1>
+<h1 id="Análisis predictivo de la calidad del vino blanco"> :wine_glass: Análisis predictivo de la calidad del vino blanco</h1>
 
 ![Imagen de portada](data/Imagen%20de%20portada.jpg)
 
@@ -25,7 +25,7 @@ En entrenamiento, arrojó valores por encima del 83 % y en testeo, obtuvimos un 
 ¡Salud!
 _____________________________________________
 
-<h1 id="Predictive Analysis of White Wine Quality"> :clinking_glass: Predictive Analysis of White Wine Quality</h1>
+<h1 id="Predictive Analysis of White Wine Quality"> :wine_glass: Predictive Analysis of White Wine Quality</h1>
 
 
 We are faced with the challenge of conducting predictive analysis by training various machine learning models, both supervised and unsupervised, on a specific chosen topic. After extensive exploration, we are presented with the opportunity to predict the quality variable of white wine based on composition data.
